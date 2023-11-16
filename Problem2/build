@@ -1,0 +1,9 @@
+# Build file for AnalogIn files written by David Melanson
+#for IoT Homework 8 Problem 2
+
+#!/bin/bash
+
+echo "Building AnalogIn files"
+g++ -o test_analog AnalogIn.cpp AnalogIn.h test_analog.cpp
+chmod +x test_analog
+echo "Finished"

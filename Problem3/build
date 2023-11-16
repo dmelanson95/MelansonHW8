@@ -1,0 +1,11 @@
+#Problem 3 Build file written by David Melanson
+#Builds all files associated with Problem 3 and gives it execute permission
+#P8_16 is set as input and reads the value of a push button attached to it
+#P9_12 is set as output and sets its attached LED high if the button is pushed
+
+#!/bin/bash
+
+echo Building files
+g++ -o gpioApp gpioApp.cpp myGPIO.h myGPIO.cpp LED.h LED.cpp AnalogIn.h AnalogIn.cpp
+chmod +x gpioApp
+echo Finished

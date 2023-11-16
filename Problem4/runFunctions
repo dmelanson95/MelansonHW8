@@ -1,0 +1,15 @@
+# Bash file that runs the requisite Python scripts and sends output to txt files
+# For IoT Homework 8 Problem 4
+
+#!/bin/bash
+
+echo Running square script
+python3 square.py > squareOutput.txt
+
+echo Running cube script
+python3 cube.py > cubeOutput.txt
+
+echo running computeFunction script
+python3 computeFunction > computeFunction.txt
+
+echo Finished
