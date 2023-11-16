@@ -1,0 +1,12 @@
+# Program to build requisite files for MYGPIO class and app
+# By David Melanson
+# For IoT Homework 8
+# myGpioApp.cpp sets P9_12 as output, sets it high for 3 seconds and then sets it low
+# it also set p8_16 as an input and then reads and prints the current value
+
+#!/bin/bash
+
+echo "Building MYGPIO Files"
+g++ -o myGpioApp myGPIO.cpp myGPIO.h myGpioApp.cpp
+chmod +x myGpioApp
+echo "Finished"
